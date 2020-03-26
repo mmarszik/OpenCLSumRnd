@@ -1,0 +1,2 @@
+# OpenCLSumRnd
+OpenCLSumRnd
