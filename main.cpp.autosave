@@ -248,7 +248,7 @@ static std::vector<utyp64> versionOpenCL(
     cl_int success;
     std::vector<utyp64> sums(seeds.size());
     cutyp32 MEMSIZE = seeds.size() * sizeof(utyp64);
-
+,
     cl::Program program = createClProgram("OpenCLSumRnd.cl",verbose);
     auto context = program.getInfo<CL_PROGRAM_CONTEXT>();
     auto devices = program.getInfo<CL_PROGRAM_DEVICES>();
